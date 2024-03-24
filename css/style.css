@@ -1,0 +1,81 @@
+
+/* TP.1 _ HTML de la página de "La cocina de JUan";
+        _ Home, Acerca de, Contacto, imagenes;
+
+TP.2 _ Css de la página;
+     _ Agregar la receta con listas, tablas;
+     _ Agregar íconos de redes sociales (hipervínculos);
+
+TP.3 _ Agregar Regístrese y sucursales;
+     _ Agregar Iframes de direcciones desde Google maps y links de los mismos;
+      _ Realizar el formulario de registro;
+      _ Direccionar los datos a Show_data.html*/
+header {
+    background-color: orange;
+}
+
+button {
+    background-color: chocolate;
+    color: aliceblue;
+    padding: 10px 12px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.imagen {
+    text-align: center;
+}
+
+footer {
+    background-color: orange;
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+/* Contacto */
+.contacto {
+    display: flex;
+    margin-left: 5px;
+    padding-bottom: 20%;
+}
+
+ .mail {
+   padding: 15px;
+ }
+
+ /* Receta */
+ .parrafo {
+    font-weight: bold;
+    font-size: 20px;
+ }
+
+/* Sucursales */
+.direccion {
+    display: flex;
+}
+
+.enlace {
+    padding-top: 12px;
+    margin-left: 5px;
+}
+
+/* Datos */
+.centrar {
+    text-align: center;
+}
+
+/* registro */
+.enviar {
+    background-color: chocolate;
+    color: aliceblue;
+    padding: 10px 12px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
