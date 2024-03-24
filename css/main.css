@@ -1,14 +1,14 @@
 header {
-    background-color: orange;
+    background-color: black;
+    color: white;
 }
 
-/* si en vez de botón le pongo clase .nav a los enlaces, van a actuar como botones y le puedo colocar text-decoration: none.. siendo un botón no me permite, queda el subrayado del enlace  */
-button {
-    background-color: chocolate;
-    color: aliceblue;
-    padding: 10px 12px;
-    margin-top: 10px;
-    margin-left: 10px;
+.nav {
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 h1 {
@@ -21,11 +21,16 @@ h1 {
 }
 
 footer {
-    background-color: orange;
+    background-color: black;
+    color: white;
     margin-top: 30px;
     padding-top: 25px;
     padding-bottom: 8px;
     text-align: center;
+}
+
+.redes {
+    color: white;
 }
 
 /* Contacto */
@@ -62,8 +67,8 @@ footer {
 
 /* registro */
 .enviar {
-    background-color: chocolate;
-    color: aliceblue;
+    background-color: gray;
+    color: white;
     padding: 10px 12px;
     margin-top: 5px;
     margin-left: 10px;
