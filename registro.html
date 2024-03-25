@@ -31,40 +31,93 @@
     <main>
         <h2>Formulario de registro</h2>
         <form action="Show_data.html" target="_blank">
-            <label for="Nombre">Nombre: </label>
-            <input type="text" name="Nombre" placeholder="Ingrese su nombre aquí..."><br><br>
-        
-            <label for="Apellido">Apellido: </label>
-            <input type="text" name="Apellido" placeholder="Ingrese su apellido aquí..."><br><br>
-        
-            <label for="street">Dirección: </label>
-            <input type="text" name="Direccion" placeholder="Ingrese su dirección aquí..."><br><br>
-        
-            <label for="city">Ciudad: </label>
-            <input type="text" name="Ciudad" value="C.A.B.A.-"><br><br> 
-        
-            <label for="zipcode">Código postal: </label>
-            <input type="text" name="Cod_postal" placeholder="Ingrese su código postal aquí..."><br><br>
-        
-            <label for="birthdate">Fecha de nacimiento (mm/dd/yyyy): </label>
-            <input type="text" name="birthdate"><br><br>
 
-            <p>Género
+            <!-- Nombre -->
+            <label for="Nombre">Nombre: </label>
+            <input type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre aquí...">
+
+            <!-- Apellido -->
+            <label for="Apellido">Apellido: </label>
+            <input type="text" name="Apellido" id="Apellido" placeholder="Ingrese su apellido aquí..."><br><br>
+
+            <!-- Dirección -->
+            <label for="direccion">Dirección: </label>
+            <input type="text" name="Direccion" id="direccion" placeholder="Ingrese su dirección aquí..."><br><br>
+        
+            <!-- Calle -->
+            <label for="street">Calle: </label>
+            <input type="text" name="Calle" id="street">
+
+            <!-- Número -->
+            <label for="number">Número: </label>
+            <input type="number" name="Número" id="number">
+
+            <!-- Ciudad -->
+            <label for="city">Ciudad: </label>
+            <input type="text" name="Ciudad" id="city" value="C.A.B.A.-">
+        
+            <!-- Código Postal -->
+            <label for="zipcode">Código postal: </label>
+            <input type="text" name="Cod_postal" id="zipcode" placeholder="Ingrese su código postal aquí..."><br><br>
+        
+            <!-- Teléfono -->
+            <label for="phone">Teléfono: </label>
+            <input type="tel" name="Telefono" id="phone">
+            
+            <!-- Fecha de nacimiento -->
+            <label for="birthdate">Fecha de nacimiento: </label>
+            <input type="date" name="nacimiento" id="birthdate">
+
+            <!-- Mail -->
+            <label for="mail">Mail: </label>
+            <input type="email" name="mail" id="mail">
+
+            <!-- Clave -->
+            Clave: <input type="password" name="clave">
+
+            <!-- Link del TP.3 -->
+            <!-- <label for="link">Link del TP 3: </label>
+            <input type="text" name="link" id="link"> -->
+
+            <!-- Género (radio) -->
+            <p>Género: (Radio)
                <input type="radio" name="genero" value="hombre" checked>Hombre
                <input type="radio" name="genero" value="Mujer">Mujer
                <input type="radio" name="genero" value="otro">Otro
             </p>
 
-            <p>Estudios
-               <input type="checkbox" name="estudio" value="primarios">Primarios
-               <input type="checkbox" name="estudio" value="secundarios">Secundarios
-               <input type="checkbox" name="estudio" value="terciarios">Terciarios
-               <input type="checkbox" name="estudio" value="universitarios">Universitarios
-               <input type="checkbox" name="estudio" value="otro">Otro
+            <!-- Comocimientos Previos (checkbox) -->
+            <p>Conocimientos previos: (checkbox)
+                <input type="checkbox" name="Conocimientos_previos" value="html">HTML
+                <input type="checkbox" name="Conocimientos_previos"value="css">CSS
+                <input type="checkbox" name="Conocimientos_previos" value="bootstrap">Bootstrap
+                <input type="checkbox" name="Conocimientos_previos" value="javascript">JavaScript
+                <input type="checkbox" name="Conocimientos_previos" value="typescript">Typescript
+                <input type="checkbox" name="Conocimientos_previos" value="angular">Angular
+                <input type="checkbox" name="Conocimientos_previos" value="base da datos">Base de datos
+                <input type="checkbox" name="Conocimientos_previos" value="python">Python
+                <input type="checkbox" name="Conocimientos_previos" value="django">Django
             </p>
+
+            <!-- Estudios (select) -->
+            <p>Estudios: (Select)
+              <select name="Estudios">
+                <option>Primarios</option>
+                <option>Secundarios</option>
+                <option>Terciarios</option>
+                <option>Universitarios</option>
+                <option>Otros</option>
+              </select>
+            </p>
+
+            <!-- Comentarios (textarea) -->
+            <p>comentarios:</p>
+            <textarea name="comentario" id="" cols="40" rows="10"></textarea><br><br>
             
+            <!-- Enviar -->
             <input type="submit" value="Enviar" class="nav">
         </form>
+
         <p>Si usted hace click en el botón "Enviar", la información será enviada a la página "Show_data.html"</p>
     </main>
 

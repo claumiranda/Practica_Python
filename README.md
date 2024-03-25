@@ -18,6 +18,7 @@
 <h2>TP.4</h2>
 <p> _ Cambiar el estilo a la página;</p>
 <p> _ Background-color: negro, de header y footer; </p>
-<p> _ Background-colo:gray, color:white, y border-radius de botones;</p>
+<p> _ Background-color: gray, color: white, y border-radius de botones;</p>
+<p> _ Cambios en el formulario;</p>
 
 ![error-page](https://github.com/claumiranda/Practica_Python/assets/133828623/1bd9a4b7-7d66-4a09-b3d9-6b4e84341a02)
