@@ -13,12 +13,16 @@
 <p> _ Agregar Regístrese y sucursales;</p>
 <p> _ Agregar Iframes de direcciones desde Google maps y links de los mismos;</p>
 <p> _ Realizar el formulario de registro;</p>
-<p> _ Direccionar los datos a Show_data.html;</p>
+<p> _ Direccionar los datos ingresados a Show_data.html;</p>
 
 <h2>TP.4</h2>
 <p> _ Cambiar el estilo a la página;</p>
 <p> _ Background-color: negro, de header y footer; </p>
 <p> _ Background-color: gray, color: white, y border-radius de botones;</p>
 <p> _ Cambios en el formulario;</p>
+
+<h2>TP.5</h2>
+<p> _ Mejorar (dándole estilo) al formulario de registro, los íconos de las redes sociales, las imágenes, etc.</p>
+<p> _ Agregar una página web con los clientes, varias imágenes adaptables al dispositivo (Responsive Web Design);</p>
 
 ![error-page](https://github.com/claumiranda/Practica_Python/assets/133828623/1bd9a4b7-7d66-4a09-b3d9-6b4e84341a02)

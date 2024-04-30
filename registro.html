@@ -21,86 +21,113 @@
 
             <a class="nav" href="registro.html">Regístrese</a>
 
-            <a class="nav" href="sucursales.html">
-            Sucursales</a>
+            <a class="nav" href="sucursales.html">Sucursales</a>
+
+            <a class="nav" href="clientes.html">Nuestros clientes</a>
         </nav>
         
     <h1>La cocina de Juan</h1>
     </header>
 
     <main>
-        <h2>Formulario de registro</h2>
+       
         <form action="Show_data.html" target="_blank">
+            <h2 class="titulo">Formulario de registro</h2>
 
             <!-- Nombre -->
+            <div class="flex">
             <label for="Nombre">Nombre: </label>
             <input type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre aquí...">
+            </div>
 
             <!-- Apellido -->
+            <div class="flex">
             <label for="Apellido">Apellido: </label>
-            <input type="text" name="Apellido" id="Apellido" placeholder="Ingrese su apellido aquí..."><br><br>
+            <input type="text" name="Apellido" id="Apellido" placeholder="Ingrese su apellido aquí...">
+            </div>
 
             <!-- Dirección -->
+            <div class="flex">
             <label for="direccion">Dirección: </label>
-            <input type="text" name="Direccion" id="direccion" placeholder="Ingrese su dirección aquí..."><br><br>
+            <input type="text" name="Direccion" id="direccion" placeholder="Ingrese su dirección aquí...">
+            </div>
         
             <!-- Calle -->
+            <div class="flex">
             <label for="street">Calle: </label>
             <input type="text" name="Calle" id="street">
+            </div>
 
             <!-- Número -->
+            <div class="flex">
             <label for="number">Número: </label>
             <input type="number" name="Numero" id="number">
+            </div>
 
             <!-- Ciudad -->
+            <div class="flex">
             <label for="city">Ciudad: </label>
             <input type="text" name="Ciudad" id="city" value="C.A.B.A.-">
+            </div>
         
             <!-- Código Postal -->
+            <div class="flex">
             <label for="zipcode">Código postal: </label>
-            <input type="text" name="Cod_postal" id="zipcode" placeholder="Ingrese su código postal aquí..."><br><br>
+            <input type="text" name="Cod_postal" id="zipcode" placeholder="Ingrese su código postal aquí...">
+            </div>
         
             <!-- Teléfono -->
+            <div class="flex">
             <label for="phone">Teléfono: </label>
             <input type="tel" name="Telefono" id="phone">
+            </div>
             
             <!-- Fecha de nacimiento -->
+            <div class="flex">
             <label for="birthdate">Fecha de nacimiento: </label>
             <input type="date" name="nacimiento" id="birthdate">
+            </div>
 
             <!-- Mail -->
+            <div class="flex">
             <label for="mail">Mail: </label>
             <input type="email" name="mail" id="mail">
+            </div>
 
             <!-- Clave -->
-            Clave: <input type="password" name="clave">
+            <div class="flex">
+            <label for="password">Clave: </label>
+            <input type="password" name="clave">
+            </div>
 
             <!-- Link del TP.3 -->
-            <!-- <label for="link">Link del TP 3: </label>
-            <input type="text" name="link" id="link"> -->
+            <div class="flex">
+            <label for="link">Link del TP 3: </label>
+            <input type="text" name="link" id="link">
+            </div>
 
             <!-- Género (radio) -->
-            <p>Género: (Radio)
+            <p class="acomodo">Género: (Radio)
                <input type="radio" name="genero" value="hombre" checked>Hombre
                <input type="radio" name="genero" value="Mujer">Mujer
                <input type="radio" name="genero" value="otro">Otro
             </p>
-
+            
             <!-- Comocimientos Previos (checkbox) -->
-            <p>Conocimientos previos: (checkbox)
-                <input type="checkbox" name="Conocimientos_previos" value="html">HTML
-                <input type="checkbox" name="Conocimientos_previos"value="css">CSS
-                <input type="checkbox" name="Conocimientos_previos" value="bootstrap">Bootstrap
-                <input type="checkbox" name="Conocimientos_previos" value="javascript">JavaScript
-                <input type="checkbox" name="Conocimientos_previos" value="typescript">Typescript
-                <input type="checkbox" name="Conocimientos_previos" value="angular">Angular
-                <input type="checkbox" name="Conocimientos_previos" value="base da datos">Base de datos
-                <input type="checkbox" name="Conocimientos_previos" value="python">Python
-                <input type="checkbox" name="Conocimientos_previos" value="django">Django
+            <p class="acomodo">Conocimientos previos: (checkbox)
+                <input class="check" type="checkbox" name="Conocimientos_previos" value="html">HTML
+                <input class="check" type="checkbox" name="Conocimientos_previos"value="css">CSS
+                <input class="check" type="checkbox" name="Conocimientos_previos" value="bootstrap">Bootstrap
+                <input class="check" type="checkbox" name="Conocimientos_previos" value="javascript">JavaScript
+                <input class="check" type="checkbox" name="Conocimientos_previos" value="typescript">Typescript
+                <input class="check" type="checkbox" name="Conocimientos_previos" value="angular">Angular
+                <input class="check" type="checkbox" name="Conocimientos_previos" value="base da datos">Base de datos
+                <input class="check" type="checkbox" name="Conocimientos_previos" value="python">Python
+                <input class="check" type="checkbox" name="Conocimientos_previos" value="django">Django
             </p>
 
             <!-- Estudios (select) -->
-            <p>Estudios: (Select)
+            <p class="acomodo">Estudios: (Select)
               <select name="Estudios">
                 <option>Primarios</option>
                 <option>Secundarios</option>
@@ -111,14 +138,16 @@
             </p>
 
             <!-- Comentarios (textarea) -->
-            <p>comentarios:</p>
-            <textarea name="comentario" id="" cols="40" rows="10"></textarea><br><br>
+            <div class="acomodo">
+            <p>comentarios: </p>
+            <textarea name="comentario"></textarea>
+            </div>
             
             <!-- Enviar -->
             <input type="submit" value="Enviar" class="nav">
         </form>
 
-        <p>Si usted hace click en el botón "Enviar", la información será enviada a la página "Show_data.html"</p>
+        <p class="p">Si usted hace click en el botón "Enviar", la información será enviada a la página "Show_data.html"</p>
     </main>
 
     <footer>
@@ -132,7 +161,7 @@
 
         <a class="redes" href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
 
-    <p>Derechos reservados @ 2024</p>
+    <p>Derechos reservados @ 2024 - claumiranda</p>
 
     </footer>   
 </body>
