@@ -47,6 +47,13 @@ h3 {
     height: 200px;
 }
 
+@media (max-width:650px) {
+    .imagen img {
+    width: 90%;
+    height: auto; 
+  }
+}
+
 footer {
     background-color: black;
     color: white;
