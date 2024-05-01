@@ -25,4 +25,14 @@
 <p> _ Mejorar (dándole estilo) al formulario de registro, los íconos de las redes sociales, las imágenes, etc.</p>
 <p> _ Agregar una página web con los clientes, varias imágenes adaptables al dispositivo (Responsive Web Design);</p>
 
+<h2>Actividad Práctica 6</h2>
+<p> _ Crear una cuenta en GitHub y subir el código generado para tu página web;</p>
+
+<h2>Actividad Práctica 7</h2>
+<p> _ Barra de navegación plegable (menú hamburguesa);</p>
+<p> _ Carrusel de imágenes (centro), aside derecho e izquierdo;</p> 
+<p> _ Responsive con 2 cortes a 576px y 765px;</p>
+<p> _ Tamaño tablet: Barra de navegación plegada (menú hamburguesa), aside derecho bajo y ocupa 100% del ancho del dispositivo y aside izquierdo y carrusel suman 100%;</p>
+<p> _ Tamaño celular: Aside, sección central y aside derecho, ocupan 100%;</p>
+
 ![error-page](https://github.com/claumiranda/Practica_Python/assets/133828623/1bd9a4b7-7d66-4a09-b3d9-6b4e84341a02)
