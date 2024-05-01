@@ -4,43 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback sent</title>
-
-    <link rel="stylesheet" href="css/main.css">
-
-    <script src="https://kit.fontawesome.com/75e28e26c3.js" crossorigin="anonymous"></script>
+     <!-- Bootstrap / CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/main.css">
+     <!-- Font awesome -->
+     <script src="https://kit.fontawesome.com/75e28e26c3.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
-        <nav>
-          <br>
-          <a class="nav" href="index.html">Home</a>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <h1>La cocina de Juan<img class="logo" src="img/2_images.png" alt="logo" width="50px"></h1>
 
-          <a class="nav" href="Acerca de.html">Acerca de</a>
-
-          <a class="nav" href="contacto.html">Contacto</a>
-
-          <a class="nav" href="registro.html">Regístrese</a>
-
-          <a class="nav" href="sucursales.html">Sucursales</a>
-
-          <a class="nav" href="clientes.html">Nuestros clientes</a>
-        </nav>
-        
-    <h1>La cocina de Juan</h1>
+          <div class="navbar-header">
+  
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+    
+          </div>
+  
+          <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav ">
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="Acerca de.html">Acerca de</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="sucursales.html">Sucursales</a></li>
+          </ul>
+  
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="clientes.html"><span class="glyphicon glyphicon-user"></span> Nuestros clientes</a></li>
+            <li><a href="registro.html"><span class="glyphicon glyphicon-log-in"></span> Regístrese</a></li>
+          </ul>
+        </div>
+      </div>
+      </nav>
     </header>
 
-    <main>
+  <main>
    <div class="centrar">
     <p >&nbsp;</p>
    <h1><font size="+1">La siguiente información ha sido enviada como su
     comentario:</font></h1>
-</div>
+   </div>
 
-<table border="1" align=center width="226">
-  <tr>
-    <th align="center">Campos</th>
-    <th align="center">Datos ingresados</th>
-  </tr>
+   <table border="1" align=center width="226">
+     <tr>
+     <th class="th">Campos</th>
+     <th class="th">Datos ingresados</th>
+     </tr>
 
 
 <script language="javascript">
@@ -103,7 +119,13 @@ and then click on "Settings...".)</li>
   <a class="redes" href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
    
 <p>Derechos reservados @ 2024 - claumiranda</p>
+</footer>
 
-</footer>   
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </body>
 </html>

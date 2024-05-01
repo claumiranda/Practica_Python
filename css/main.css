@@ -5,31 +5,35 @@
     font-size: small;
 }
 
-header {
+.navbar {
     background-color: black;
-    color: white;
     margin-bottom: 25px;
+    border-radius: 0;
 }
 
-.nav {
+.bt-receta {
     background-color: gray;
     color: white;
     text-decoration: none;
     font-size: 10px;
-    padding: 0.3%;
-    margin: 0.3%;
+    padding: 0.8%;
+    margin: 25px;
+    margin-left: 40px;
     border-radius: 5px;
     left: 0;
 }
 
-h1 {
+h1 { 
+    color: white;
     text-align: center;
-    padding: 10px;
-    font-size: small;
+    font-size: large;
+    margin-bottom: 0;
 }
 
 h2 {
-    margin: 5px;
+    margin: 25px;
+    margin-left: 40px;
+    font-size: large;
 }
 
 h3 {
@@ -52,6 +56,10 @@ h3 {
     width: 90%;
     height: auto; 
   }
+}
+
+.relleno {
+    margin: 5px 30px;
 }
 
 footer {
@@ -79,14 +87,14 @@ footer {
 /* Contacto */
 .contacto {
     display: flex;
-    margin: 5px;
+    margin: 15px;
+    margin-left: 40px;
     padding-bottom: 20%;
 }
 
  .mail {
    margin-bottom: 15px;
    margin-left: 5px;
-   
  }
 
  /* Receta */
@@ -109,14 +117,14 @@ table {
     margin-left: 40%;
 }
 
-li {
+section li {
     margin-left: 40%;
 }
 
 /* Sucursales */
 .direccion {
     display: flex;
-    margin-left: 5px;
+    margin-left: 40px;
 }
 
 .enlace {
@@ -125,8 +133,24 @@ li {
 }
 
 iframe {
-    margin-left: 10px;
-    margin-bottom: 20px;
+    margin: 10px 20px ;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 765px) {
+    iframe {
+        width: 90%;
+        height: auto; 
+        margin: 10px; 
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .direccion {
+        text-align: center;
+    }
 }
 
 /* Datos */
@@ -233,7 +257,11 @@ input[type=submit]:hover {
     }
  }
 
- 
+ /* Show_data */
+.th {
+    text-align: center;
+}
+
 
 
 
