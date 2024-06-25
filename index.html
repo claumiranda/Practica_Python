@@ -17,7 +17,7 @@
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
        
-        <h1>La cocina de Juan<img class="logo" src="img/2_images.png" alt="logo" width="50px"></h1>
+        <h1>La cocina de Juan <img src="img/2_images.png" alt="logo" width="50px"></h1>
 
         <div class="navbar-header">
          
@@ -47,17 +47,106 @@
     </header>
 
     <main>
-        <h2 >Sopa Crema de Calabaza</h2>
+        <!-- <h2 >Sopa Crema de Calabaza</h2>
 
         <div class="imagen">
         <img src="img/crema-de-calabaza.webp" alt="Sopa crema de calabaza" >
        </div>
 
         <a class="bt-receta" href="receta.html">Receta
-        </a>
+        </a> -->
+ 
+        <!-- Grid -->
+        <div class="row">
+
+          <!-- Aside 1 -->
+          <div class="col-md-3 col-sm-3">
+            <div class="aside">
+            <p class="aside_p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur vitae perspiciatis excepturi enim, ea doloremque cupiditate itaque illum dicta delectus assumenda beatae tenetur sapiente repellat quia pariatur voluptas sunt illo?</p>
+            </div>
+          </div>
+
+        <!-- carrusel -->
+        <div class="col-md-6 col-sm-9">
+
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicatores -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+          </ol>
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+              <div class="item active">
+                <img src="img/crema-de-calabaza.webp" alt="Sopa crema de calabaza">
+                <div class="carousel-caption">
+                <h3 class="text">Sopa crema de calabaza</h3>
+                <p class="text-p">Lucite en la cocina con esta receta fácil y nutritiva</p>
+                </div>
+              </div>
+        
+              <div class="item">
+                <img src="img/focaccia.png" alt="Focaccia">
+                <div class="carousel-caption">
+                <h3 class="text">Focaccia</h3>
+                <p class="text-p">Plato tradicional de la cocina italiana muy relacionado con la popular pizza</p>
+                </div>
+              </div>
+        
+              <div class="item">
+                <img src="img/goulash-hungaro1.jpg" alt="Goulash">
+                <div class="carousel-caption">
+                <h3 class="text">Goulash</h3>
+                <p class="text-p">Guiso de ternera húngaro con una salsa de pimentón deliciosa</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <img src="img/salmorejo-cordobes.jpg" alt="Salmorejo">
+                <div class="carousel-caption">
+                <h3 class="text">Salmorejo</h3>
+                <p class="text-p">Se trata de una preparación tradicional de Córdoba</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <img src="img/seafood.jpg" alt="SeaFood">
+                <div class="carousel-caption">
+                <h3 class="text">seafood</h3>
+                <p class="text-p">Con animales o plantas comestibles procedentes del mar</p>
+                </div>
+              </div>
+            </div>
+        
+          <!-- Left and right controles -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+      </div>
+    </div>
+
+      <!-- aside 2 -->
+      <div class="col-md-3 col-sm-12">
+        <div class="aside">
+          <p class="aside_p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur vitae perspiciatis excepturi enim, ea doloremque cupiditate itaque illum dicta delectus assumenda beatae tenetur sapiente repellat quia pariatur voluptas sunt illo?
+          </p>
+        </div>
+      </div>
+        
     </main>
 
     <footer>
+      <div class="footer-text">
         <a class="redes" href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 
         <a class="redes" href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-f"  aria-hidden="true"></i></a>
@@ -69,6 +158,7 @@
         <a class="redes" href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
       
         <p>Derechos reservados @ 2024 - claumiranda</p>
+      </div>
     </footer>   
 
     <!-- jQuery library -->
