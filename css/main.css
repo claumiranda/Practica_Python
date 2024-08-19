@@ -203,12 +203,12 @@ section li {
     margin-left: 5px;
 }
 
-.mapas {
-    margin: 20px;
- }
-
 iframe {
-    margin: 10px 20px ;
+    margin: 20px;
+    padding: 5px;
+}
+
+.mapas {
     margin-left: 20px;
 }
 
