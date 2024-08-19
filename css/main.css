@@ -5,9 +5,15 @@
     font-size: small;
 }
 
+.conteiner {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
 .navbar {
     background-color: black;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     border-radius: 0;
 }
 
@@ -27,6 +33,7 @@
     left: 0;
 } */
 
+/* La cocina de Juan */
 h1 { 
     color: white;
     text-align: center;
@@ -42,15 +49,18 @@ h2 {
     font-weight: 800;
 }
 
+/* receta: ingredientes */
 h3 {
     margin-bottom: 5px;
     margin-left: 15px;
 }
 
-/* home; acerca de; receta  */
+/* logo */
 .logo {
     width: 50px;
 }
+
+/* home; acerca de; receta  */
 .imagen {
     text-align: center;
     margin: 25px;
@@ -61,57 +71,59 @@ h3 {
     height: 250px;
 }
 
-@media (max-width:650px) {
-    .imagen img {
-    width: 90%;
-    height: auto; 
-  }
+/* main - home */
+.grid-container {
+    display: grid;
+    gap: 20px;
 }
 
-/* main - home */
-.aside {
+.aside-1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.carousel {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.aside-2 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.aside-1, .aside-2 {
     background-color: gray;
-    height: 37rem; 
+    height: 400px; 
+    text-align: center;
+    padding: 10px;
 }
 
 .aside_p {
-    margin: 0;
-    text-align: center;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.main-home {
+    margin: 0 25px; 
 }
 
 /* slide */
-.item {
-    width: 100%;
-    height: 370px;
-}
-
-.row {
-    margin: 30px 0;
+.item img {
+    height: 40dvh;
+    min-height: 400px;
+    min-width: 150px; /* establece una altura mínima*/
 }
 
 .text {
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 1.3px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .text-p {
     font-size: large;
-}
-
-@media only screen and (max-width: 478px) {
-   .item img {
-    width: 100%;
-    height: auto;
-  }
-     .row {
-        margin: 0;
-     }
-
-     .aside {
-        padding-top: 10px;
-        margin: 20px 0;
-     }
+    font-weight: 250;
 }
 
 /* acerca de - p */
@@ -119,22 +131,12 @@ h3 {
     margin: 70px 30px 0 30px;
 }
 
-/* body */
-body {
-    min-height: 100vh;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
 /* Footer */
 footer {
     background-color: black;
     color: white;
-    margin-top: auto;
-    display: flex;
-    width: 100%;
-    height: 16vh;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .redes {
@@ -151,9 +153,7 @@ footer {
 }
 
 .footer-text {
-     text-align: center;
-     margin-left: 40%;
-     margin-top: 30px;    
+    margin: 40px 0;
 }
 
 /* Contacto */
@@ -203,30 +203,13 @@ section li {
     margin-left: 5px;
 }
 
+.mapas {
+    margin: 20px;
+ }
+
 iframe {
     margin: 10px 20px ;
     margin-left: 20px;
-}
-
-@media screen and (max-width: 765px) {
-    iframe {
-        width: 90%;
-        height: auto; 
-        margin: 10px; 
-    }
-
-    h1 {
-        text-align: center;
-    }
-
-    .direccion {
-        text-align: center;
-    }
-}
-
-/* Datos */
-.centrar {
-    text-align: center;
 }
 
 /* registro */
@@ -241,7 +224,7 @@ iframe {
 form {
     font-size: 10px;
     padding: 12px 10px;
-    margin: 8px 20%;
+    margin: 8px 15%;
     border: 1vw;
     border-radius: 5px;
     box-sizing: border-box;
@@ -270,11 +253,11 @@ input[type=text],[type=number],[type=tel],[type=date],[type=email],[type=passwor
 }
 
 .acomodo {
-    margin: 8px 40px;
+   margin: 8px 40px;
 }
 
 textarea {
-    width: 60%;
+   width: 60%;
 }
 
 input[type=submit] {
@@ -299,35 +282,19 @@ input[type=submit]:hover {
     font-size: 10px;
 }
 
-@media (max-width:650px) {
-    form {
-        width: 90%;
-        margin: auto;
-    }
-}
-
 /* Clientes */
 .clientes {
     display: flex;
     justify-content: center;
+    padding: 5px;
 }
 
 .clientes img {
-    width: 250px;
-    height: 180px;
+    width: 25%;
+    height: auto;
     margin-top: 0;
     margin: 15px; 
- }
-
- @media (max-width:650px) { 
-.clientes {
-    display: block;
-}
-
-    .clientes img {   
-        width: 90%;
-        height: auto; 
-    }
+    object-fit: cover;
  }
 
  /* Show_data */
@@ -335,6 +302,113 @@ input[type=submit]:hover {
     text-align: center;
 }
 
+.centrar {
+    text-align: center;
+}
+
+/* mediaQuery */
+@media screen and (max-width: 765px) {
+    /* slide */
+    .grid-container {
+        display: grid;
+    }
+
+    .aside-1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .aside_p {
+        margin-top: 5px;
+    }
+
+    .carousel {
+        grid-column: 2 / span 2;
+        grid-row: 1;
+    }
+
+    .aside-2 {
+        grid-column: 1 / span 3;
+        grid-row: 3;
+    }
+
+    .main-home {
+        margin: 0;
+    }
+
+    .item img {
+        height: 30dvh;
+        min-height: 400px;
+        min-width: 250px;
+    }
+ 
+    /* sucursales */
+    .mapas {
+       margin: 10px;
+    }
+
+   /* formulario */
+   form {
+    font-size: 10px;
+    padding: 12px 10px;
+    margin: 8px 10%;
+    box-sizing: border-box;
+    }
+}
+
+  @media screen and (max-width: 576px) {
+    /* slide */
+    .grid-container {
+        display: grid;
+    }
+
+    .aside-1 {
+        grid-column: 1;
+        grid-row: 1;
+        padding: 10px;
+    }
+
+    .aside_p {
+        margin-top: 25px;
+    }
+
+    .carousel {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .aside-2 {
+        grid-column: 1;
+        grid-row: 3;
+        padding: 10px;
+    }
+
+    .item img {
+        max-height: 400px;
+        min-width: 100%;
+        object-fit: cover; /* cubre el contenedor sin distorsionar la imagen */
+    }
+
+    /* clientes */
+    .clientes {
+       display: block;
+    }
+    
+    .clientes img {   
+      width: 90%;
+      height: auto; 
+   }
+
+   /* formulario */
+   form {
+    font-size: 10px;
+    padding: 12px 10px;
+    margin: 8px 5%;
+    box-sizing: border-box;
+    }
+}
+
+  
 
 
 
